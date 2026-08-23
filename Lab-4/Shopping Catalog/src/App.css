@@ -1,0 +1,364 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eaf3ff;
+    color: #222;
+}
+
+
+/* MAIN APP */
+
+.app {
+    min-height: 100vh;
+    padding-bottom: 50px;
+    background: #eaf3ff;
+    transition: 0.3s;
+}
+
+
+/*HEADER*/
+
+header {
+    background: #4c99ff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #dbeafe;
+}
+
+
+/* THEME BUTTON */
+
+.theme-button {
+    margin-top: 20px;
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: white;
+    color: #1e3a5f;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.theme-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* FILTER SECTION*/
+
+.filters {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+
+/*FILTER GROUP */
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+/* INPUTS AND SELECT */
+
+.filter-group input,
+.filter-group select {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: white;
+    color: #222;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    border-color: #4c99ff;
+
+    box-shadow:
+        0 0 5px rgba(76, 153, 255, 0.3);
+}
+
+
+/* PRODUCT COUNT*/
+
+.product-count {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 20px auto;
+
+    padding: 15px 20px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.product-count h2 {
+    font-size: 20px;
+    color: #1e3a5f;
+}
+
+
+/* PRODUCTS CONTAINER*/
+
+.products-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 25px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e0e0e0;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* PRODUCT IMAGE*/
+
+.product-image {
+    width: 100%;
+    height: 180px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+}
+
+
+/* PRODUCT NAME */
+
+.product-card h2 {
+    color: #1e3a5f;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+
+/* PRODUCT DETAILS */
+
+.product-card p {
+    margin-bottom: 10px;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+
+/* IN STOCK */
+
+.in-stock {
+    color: green !important;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* OUT OF STOCK */
+
+.out-of-stock {
+    color: red !important;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* NO PRODUCTS */
+
+.no-products {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    color: #777;
+
+    font-size: 18px;
+}
+
+
+/* DARK MODE */
+
+.app.dark {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+.app.dark .filters,
+.app.dark .product-count,
+.app.dark .product-card,
+.app.dark .no-products {
+    background: #1e1e1e;
+
+    color: #f5f5f5;
+
+    border-color: #333;
+}
+
+.app.dark .filter-group label {
+    color: #ddd;
+}
+
+.app.dark .filter-group input,
+.app.dark .filter-group select {
+    background: #2a2a2a;
+
+    color: white;
+
+    border-color: #555;
+}
+
+.app.dark .product-card h2 {
+    color: #6fb1ff;
+}
+
+.app.dark .product-card p {
+    color: #ddd;
+}
+
+.app.dark .product-count h2 {
+    color: #6fb1ff;
+}
+
+.app.dark .no-products {
+    color: #ccc;
+}
+
+.app.dark .theme-button {
+    background: #333;
+    color: white;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .filters {
+        width: 95%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .product-count {
+        width: 95%;
+    }
+
+    .products-container {
+        width: 95%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+}
