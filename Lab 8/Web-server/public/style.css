@@ -1,0 +1,118 @@
+/*GENERAL STYLING*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*BODY*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #121212;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/*MAIN CONTENT*/
+
+.container {
+    width: 90%;
+    max-width: 700px;
+
+    background: #1e1e1e;
+
+    padding: 50px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.5);
+
+    border: 1px solid #333;
+}
+
+
+/*HEADING*/
+
+h1 {
+    color: #4c99ff;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+
+/* PARAGRAPH */
+
+p {
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* LINK / BUTTON */
+
+a {
+    display: inline-block;
+
+    background: #4c99ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+a:hover {
+    background: #287fe5;
+
+    transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+}
