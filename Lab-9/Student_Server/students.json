@@ -1,0 +1,30 @@
+[
+    {
+        "id": 101,
+        "name": "Rahul",
+        "department": "CSE",
+        "year": 2,
+        "cgpa": 8.5
+    },
+    {
+        "id": 102,
+        "name": "Priya",
+        "department": "AIDS",
+        "year": 2,
+        "cgpa": 9.1
+    },
+    {
+        "id": 103,
+        "name": "Arun",
+        "department": "ECE",
+        "year": 3,
+        "cgpa": 8.2
+    },
+    {
+        "id": 104,
+        "name": "Sneha",
+        "department": "CSE",
+        "year": 1,
+        "cgpa": 9.0
+    }
+]
